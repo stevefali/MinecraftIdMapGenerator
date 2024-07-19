@@ -25,7 +25,7 @@ public class V12SubTypes {
             }
         }
        for (Map.Entry<Integer, Integer> entry : multiples.entrySet()) {
-           System.out.println(entry);
+           System.out.println("subtypeQuantity.put(" + entry.getKey() + ", " + entry.getValue() + ");");
        }
     }
 
