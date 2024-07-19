@@ -27,7 +27,20 @@ public class V12SubTypes {
        for (Map.Entry<Integer, Integer> entry : multiples.entrySet()) {
            System.out.println("subtypeQuantities.put(" + entry.getKey() + ", " + entry.getValue() + ");");
        }
+       System.out.println(" ");
+       System.out.println("Number of items: " + multiples.size());
+       System.out.println("Total quantities: " + addUpQuantities(multiples));
     }
+
+    private static int addUpQuantities(Map<Integer, Integer> multiples) {
+        int quant = 0;
+        for(Map.Entry<Integer, Integer> entry : multiples.entrySet()) {
+            quant += entry.getValue();
+        }
+        return quant;
+    }
+
+
 
 
     private static final int[] itemIds = {
